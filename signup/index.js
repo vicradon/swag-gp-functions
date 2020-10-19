@@ -26,7 +26,7 @@ module.exports = async function (context, req) {
         {
           credentials: {
             status: "success",
-            user: q.Select(["data"], q.Var("user")),
+            user: q.Var("user"),
             secret: q.Select(
               ["secret"],
               q.Login(q.Select(["ref"], q.Var("user")), {
