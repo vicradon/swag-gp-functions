@@ -88,6 +88,7 @@ module.exports = async function (context, req) {
             data: {
               showCgpa: true,
               grade_system: 5,
+              selected_semester: 0,
               user_ref: q.Var("user_ref"),
             },
           }),
